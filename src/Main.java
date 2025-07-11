@@ -31,9 +31,9 @@ public class Main {
                     String two = part[1].trim();                                                       // Часть после знака  '=' part[1] - 2 часть строки
 
                     if (i == lines.size() - 1) {                                                       // Если это последняя строка
-                        System.out.println("\"" + one + "\": " + two );                          // Без запятой
+                        System.out.println("\"" + one + "\": <" + two + ">");                          // Без запятой
                     } else {
-                        System.out.println("\"" + one + "\": " + two );                         // Остальные строки с запятой
+                        System.out.println("\"" + one + "\": <" + two + ">,");                         // Остальные строки с запятой
                     }
                 }
             } catch (IOException e) {                                                                   // Если возникла ошибка при чтении файла (например, файл не найден), поймаем её здесь
