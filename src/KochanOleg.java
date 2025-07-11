@@ -38,7 +38,7 @@ public class KochanOleg {
                                                                                                                                      // return  - оператор возврата результата.
 
     public static void main(String[] args) {                                                                                         // public - метод доступен откуда угодно (требование для main).
-        String inputFile = "input.txt";                                                                                              // static - метод принадлежит классу, а не объекту
+        String inputFile = "introduce java.txt";                                                                                              // static - метод принадлежит классу, а не объекту
         String outputFile = "output.txt";                                                                                            // void - метод ничего не возвращает.
                                                                                                                                      // main - специальный метод, с которого начинается выполнение программы.
         int vowelCount = 0;                                                                                                          // String[] args - массив аргументов командной строки (в данном случае не используется, но может быть).
