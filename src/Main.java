@@ -24,7 +24,6 @@ public class Main {
                 while ((line = reader.readLine()) != null) {                                          // Читаем файл построчно, пока не достигнем конца
                     lines.add(line);                                                                  // Добавляем каждую строку в список
                 }
-                System.out.println("{");
 
                 for (int i = 0; i < lines.size(); i++) {                                              // Проходим по всем строкам
                     String[] part = lines.get(i).split("=", 2);                               // Разбиваем строку на 2 части до знака  '=' после знака . Первая часть "one" Вторая часть "two" part-часть
@@ -32,12 +31,11 @@ public class Main {
                     String two = part[1].trim();                                                       // Часть после знака  '=' part[1] - 2 часть строки
 
                     if (i == lines.size() - 1) {                                                       // Если это последняя строка
-                        System.out.println("\"" + one + "\": <" + two + ">");                          // Без запятой
+                        System.out.println("\"" + one + "\": " + two );                          // Без запятой
                     } else {
-                        System.out.println("\"" + one + "\": <" + two + ">,");                         // Остальные строки с запятой
+                        System.out.println("\"" + one + "\": " + two );                         // Остальные строки с запятой
                     }
                 }
-                System.out.println("}");
 
             } catch (IOException e) {                                                                   // Если возникла ошибка при чтении файла (например, файл не найден), поймаем её здесь
                 System.out.println("Ошибка при чтении файла: " + e.getMessage());                      // Выведем сообщение об ошибке Защита от ошибок во время чтения файла
