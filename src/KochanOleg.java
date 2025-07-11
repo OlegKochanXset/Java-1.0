@@ -72,6 +72,7 @@ public class KochanOleg {
             System.out.println("Количество гласных (заменённых на 'a'): " + vowelCount);                                   // Вывод в консоль
             System.out.println("Количество согласных (заменённых на 'м'): " + consonantCount);                             // Вывод в консоль
 
+
         } catch (IOException e) {
             System.err.println("Ошибка при работе с файлами: " + e.getMessage());                                          // catch отлавливает ошибки, которые могут возникнуть при работе с файлами.
         }
