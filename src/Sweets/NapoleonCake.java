@@ -1,9 +1,15 @@
 package Sweets;
 
-public class NapoleonCake extends Sweet{                //создали публичный класс наполеон наследуемся с родительского класса сладости.
+public class NapoleonCake extends Sweet {
+    private String creamType;  // уникальное свойство для торта Наполеон
 
+    public NapoleonCake() {
+        super("Наполеон", 120, 80);  // вызываем конструктор с 3 параметрами
+        this.creamType = "С ягодным кремом";
+    }
 
-    public NapoleonCake() {                             //создали конструктор класса наполеона
-        super("Наполеон",120,80, "С ягодным кремом");           //super — ключевое слово для вызова конструктора родительского класса
+    @Override
+    public String getInfo() {
+        return name + " | Вес: " + weight + " г | Цена: " + price + " руб | Крем: " + creamType;
     }
 }
